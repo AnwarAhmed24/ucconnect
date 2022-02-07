@@ -1,0 +1,383 @@
+
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+/* Google Font Import */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Roboto', sans-serif!important;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color: #f69321;
+    --secondary-color: #444444;
+}
+
+ .bg-primary{
+     background-color: var(--primary-color)!important;
+ }
+ .bg-secondary{
+     background-color: var(--secondary-color)!important;
+ }
+ .text-primary{
+     color: var(--primary-color)!important;
+ }
+ .text-secondary{
+     color: var(--secondary-color)!important;
+ }
+/*======================================================================= */
+                        /*Start Page Shylesheet*/
+/*======================================================================= */
+
+
+/* =============== START HEADER PART ================*/
+.navbar-toggler:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    }
+    
+ .nav-item{
+        padding: 20px 0px;
+        font-size: 14px;
+        font-weight: 500;      
+    }
+ .nav-item:last-child{
+        background-color: var(--primary-color);
+        padding: 22px 20px;
+    }
+    .nav-item:last-child:hover{
+    background-color: var(--secondary-color);
+    }
+
+.active{
+    color: orange!important;
+    }
+
+    .dropdown-item.active, .dropdown-item:active{
+        background: var(--secondary-color)!important;
+        color: white!important;
+    }
+    
+    #breadcrumb{
+        background-color: black;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#000000ab), to(#000000ab)), url('../img/inner-banner.jpg') ;
+        background-image: -o-linear-gradient(#000000ab, #000000ab), url('../img/inner-banner.jpg') ;
+        background-image: linear-gradient(#000000ab, #000000ab), url('../img/inner-banner.jpg') ; 
+        background-position: center;
+       background-size: cover; 
+    }
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-size: 50px;
+    }
+/* =============== END HEADER PART ================*/
+
+
+
+/* =============== START SERVICES PART ================*/
+.card{
+   margin: 20px;
+}
+.title::after{
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 2px;
+    background-color: var(--primary-color);
+    top: 54px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card-link{
+    color: var(--primary-color);
+  text-decoration: none;
+}
+.card-link:hover{
+    color: var(--secondary-color)!important;
+}
+/* =============== END  SERVICES PART ================*/
+
+
+
+/* =============== START SERVICES PROCESS PART ================*/
+.provide-parallax{
+    background-color: black;
+     background-image: -webkit-gradient(linear, left top, left bottom, from(#000000ab), to(#000000ab)), url('../img/parallax.jpeg') ;
+     background-image: -o-linear-gradient(#000000ab, #000000ab), url('../img/parallax.jpeg') ;
+     background-image: linear-gradient(#000000ab, #000000ab), url('../img/parallax.jpeg') ; 
+     background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0px;
+}
+.box > img{
+    background: white;
+    padding: 35px;
+   
+    border: 2px solid var(--primary-color);
+    border-radius: 10%;
+    width: 150px;
+}
+.counter{
+    counter-reset: count;
+    }
+.box::before{
+    counter-increment: count;
+    content: counter(count);
+    position: absolute;
+    top: 50%;
+    left: 19%;
+    padding: 10px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    font-weight: bold;
+    color: white;
+}
+
+.box::after{
+    content: "";
+    position: absolute;
+    background-color:var(--primary-color);
+    width:100%;
+    height: 4px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+   left:25% ;
+   z-index: -1;
+}
+
+li{
+    list-style: none
+}
+.btn:focus{
+-webkit-box-shadow: none;
+        box-shadow: none;
+border: none;
+}
+:link{
+    text-decoration: none;
+}
+.box:last-child::after{
+    content: none;
+}
+
+/* =============== END SERVICES PROGRESS PART ================*/
+
+
+/* =============== PAYMENT PAGE DESIGN ================*/
+table > tbody > tr > td{
+    text-align: right;
+    padding: 6px 8px;
+    font-size: 13px;
+    color: #607a8c;
+}
+table input{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+}
+table input:focus{
+    border-color: #66afe9;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+            box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+    outline: 0;
+}
+.table tbody > tr > td{
+    text-align: left;
+}
+.payment-btn:hover{
+    background-color: var(--secondary-color)!important;
+}
+#Currancy{
+    width: 222px;
+    padding: 5px 10px;
+    border: 0;
+    outline: none;
+    color: #607a8c;
+}
+#payment form{
+     background-image: -webkit-gradient(linear, left top, left bottom, from(#FEFEFF), to(#BFD3E1));
+    background-image: -o-linear-gradient(top, #FEFEFF 0%, #BFD3E1 100%);
+    background-image: linear-gradient(to bottom, #FEFEFF 0%, #BFD3E1 100%); 
+    padding: 15px 0px; 
+    
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+/* =============== END PAYMENT DESIGN ================*/
+
+
+/* =============== ANOTHER PAGE DESIGN PART ================*/
+
+#scroll-top{
+    position: fixed;
+    bottom: 30px; 
+    right: 35px;
+    opacity: 0;
+    -webkit-transition: .8s;
+    -o-transition: .8s;
+    transition: .8s;  
+}
+#scroll-top > a:hover{
+    background-color: var(--secondary-color)!important;
+}
+.form-btn:hover{
+    background-color:var(--secondary-color)!important;
+    color: white!important;
+    }
+     .form-control:focus {
+      color: #212529;
+      background-color: #fff;
+      border-color: none;
+      outline:0 ;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+    }
+
+#shop .shop-card{
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+img{
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+}
+#certificate figure:hover img{
+-webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+        transform: scale(1.06);
+}
+/* =============== END ANOTHER PAGE DESIGN ================*/
+
+
+/* =============== END FOOTER ================*/
+footer{
+    background: #232323;
+    padding-top: 30px;
+}
+.footer-link a{
+    color: #a7a7a7;
+    
+}
+.footer-link a:hover{
+    color: var(--primary-color);
+}
+.footer-link li{
+    margin: 3px 20px;
+}
+.social-link .fab{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    font-size: 18px;
+} 
+footer-title::after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left:0;
+    top: 30px;
+
+}
+footer .copy-right{
+    background-color: var(--secondary-color);
+    font-size: 12px;
+}
+.breadcrumb-item > a{
+    color: white!important;
+}
+.footer-link li::before{
+    content: "\f054";
+    position: absolute;
+    left: 0;
+   font-family: "Font Awesome 5 Free"; 
+    font-weight: 600; 
+}
+
+/* =============== END FOOTER ================*/
+
+
+/*======================================================================= */
+                        /*End Page Shylesheet*/
+/*======================================================================= */
+
+
+
+/*=======ThIS IS MEDIA QUERY========*/
+
+@media (max-width: 768px) { 
+    .nav-item{
+        padding: 6px 0px;
+     
+    }
+    .nav-item:last-child{
+     text-align: center;
+        padding: 5px 20px;
+    }
+    .box::before{
+        left: 0;
+    }
+    .box > img{
+        width: 130px;
+    }
+.provide-parallax{
+    
+padding: 60px 0px;
+    }
+    .breadcrumb-title h5 {
+font-size: 17px;
+    }
+  footer  .copy-right{
+        font-size: 1p;
+        margin-top: 10px;
+    }
+
+ }
+
+ 
+@media (max-width: 992px){
+    .box::after{
+        display: none;
+    }
+.box{
+    text-align: center;
+}
+.box::before{
+    left: 50%;
+    top: 0;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+.step-title{
+    display: none;
+}
+}
+
+@media (min-width:1000px) and (max-width: 1200px) {
+    .box::before{
+       left: 7% ;
+    }
+}
